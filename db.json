@@ -1,9 +1,383 @@
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "typicode" }
+    "invoices": [
+        {
+            "id": "INV-2024-001",
+            "customer_id": "cust-01",
+            "status": "paid",
+            "amount": 1500000,
+            "due_date": "2024-12-01",
+            "items": [
+                {
+                    "name": "Compute 4vCPU",
+                    "qty": 30,
+                    "unit": "days",
+                    "price": 50000
+                }
+            ]
+        },
+        {
+            "id": "INV-2024-002",
+            "customer_id": "cust-02",
+            "status": "paid",
+            "amount": 2000000,
+            "due_date": "2024-12-02",
+            "items": [
+                {
+                    "name": "Compute 8vCPU",
+                    "qty": 20,
+                    "unit": "days",
+                    "price": 100000
+                }
+            ],
+            "data": "paid"
+        },
+        {
+            "id": "INV-2024-003",
+            "customer_id": "cust-03",
+            "status": "paid",
+            "amount": 1800000,
+            "due_date": "2024-11-20",
+            "items": [
+                {
+                    "name": "Storage SSD",
+                    "qty": 180,
+                    "unit": "GB",
+                    "price": 10000
+                }
+            ]
+        },
+        {
+            "id": "INV-2024-004",
+            "customer_id": "cust-04",
+            "status": "draft",
+            "amount": 900000,
+            "due_date": "2024-12-05",
+            "items": [
+                {
+                    "name": "Compute 2vCPU",
+                    "qty": 30,
+                    "unit": "days",
+                    "price": 30000
+                }
+            ]
+        },
+        {
+            "id": "INV-2024-005",
+            "customer_id": "cust-05",
+            "status": "paid",
+            "amount": 2500000,
+            "due_date": "2024-12-10",
+            "items": [
+                {
+                    "name": "Compute 4vCPU",
+                    "qty": 50,
+                    "unit": "days",
+                    "price": 50000
+                }
+            ]
+        },
+        {
+            "id": "INV-2024-006",
+            "customer_id": "cust-06",
+            "status": "unpaid",
+            "amount": 3000000,
+            "due_date": "2024-12-12",
+            "items": [
+                {
+                    "name": "Compute 8vCPU",
+                    "qty": 30,
+                    "unit": "days",
+                    "price": 100000
+                }
+            ]
+        },
+        {
+            "id": "INV-2024-007",
+            "customer_id": "cust-07",
+            "status": "overdue",
+            "amount": 1200000,
+            "due_date": "2024-11-10",
+            "items": [
+                {
+                    "name": "Storage HDD",
+                    "qty": 600,
+                    "unit": "GB",
+                    "price": 2000
+                }
+            ]
+        },
+        {
+            "id": "INV-2024-008",
+            "customer_id": "cust-08",
+            "status": "draft",
+            "amount": 1400000,
+            "due_date": "2024-12-15",
+            "items": [
+                {
+                    "name": "Compute 2vCPU",
+                    "qty": 40,
+                    "unit": "days",
+                    "price": 35000
+                }
+            ]
+        },
+        {
+            "id": "INV-2024-009",
+            "customer_id": "cust-09",
+            "status": "paid",
+            "amount": 2200000,
+            "due_date": "2024-12-18",
+            "items": [
+                {
+                    "name": "Compute 4vCPU",
+                    "qty": 44,
+                    "unit": "days",
+                    "price": 50000
+                }
+            ]
+        },
+        {
+            "id": "INV-2024-010",
+            "customer_id": "cust-10",
+            "status": "unpaid",
+            "amount": 1700000,
+            "due_date": "2024-12-20",
+            "items": [
+                {
+                    "name": "Storage SSD",
+                    "qty": 170,
+                    "unit": "GB",
+                    "price": 10000
+                }
+            ]
+        },
+        {
+            "id": "INV-2024-011",
+            "customer_id": "cust-01",
+            "status": "overdue",
+            "amount": 2600000,
+            "due_date": "2024-11-25",
+            "items": [
+                {
+                    "name": "Compute 8vCPU",
+                    "qty": 26,
+                    "unit": "days",
+                    "price": 100000
+                }
+            ]
+        },
+        {
+            "id": "INV-2024-012",
+            "customer_id": "cust-02",
+            "status": "draft",
+            "amount": 800000,
+            "due_date": "2024-12-22",
+            "items": [
+                {
+                    "name": "Compute 2vCPU",
+                    "qty": 20,
+                    "unit": "days",
+                    "price": 40000
+                }
+            ]
+        },
+        {
+            "id": "INV-2024-013",
+            "customer_id": "cust-03",
+            "status": "paid",
+            "amount": 3500000,
+            "due_date": "2024-12-25",
+            "items": [
+                {
+                    "name": "Compute 16vCPU",
+                    "qty": 35,
+                    "unit": "days",
+                    "price": 100000
+                }
+            ]
+        },
+        {
+            "id": "INV-2024-014",
+            "customer_id": "cust-04",
+            "status": "unpaid",
+            "amount": 2100000,
+            "due_date": "2024-12-27",
+            "items": [
+                {
+                    "name": "Compute 4vCPU",
+                    "qty": 42,
+                    "unit": "days",
+                    "price": 50000
+                }
+            ]
+        },
+        {
+            "id": "INV-2024-015",
+            "customer_id": "cust-05",
+            "status": "overdue",
+            "amount": 1900000,
+            "due_date": "2024-11-15",
+            "items": [
+                {
+                    "name": "Storage SSD",
+                    "qty": 190,
+                    "unit": "GB",
+                    "price": 10000
+                }
+            ]
+        },
+        {
+            "id": "INV-2024-016",
+            "customer_id": "cust-06",
+            "status": "draft",
+            "amount": 1100000,
+            "due_date": "2024-12-29",
+            "items": [
+                {
+                    "name": "Compute 2vCPU",
+                    "qty": 22,
+                    "unit": "days",
+                    "price": 50000
+                }
+            ]
+        },
+        {
+            "id": "INV-2024-017",
+            "customer_id": "cust-07",
+            "status": "paid",
+            "amount": 2700000,
+            "due_date": "2024-12-30",
+            "items": [
+                {
+                    "name": "Compute 8vCPU",
+                    "qty": 27,
+                    "unit": "days",
+                    "price": 100000
+                }
+            ]
+        },
+        {
+            "id": "INV-2024-018",
+            "customer_id": "cust-08",
+            "status": "unpaid",
+            "amount": 1600000,
+            "due_date": "2025-01-02",
+            "items": [
+                {
+                    "name": "Storage HDD",
+                    "qty": 800,
+                    "unit": "GB",
+                    "price": 2000
+                }
+            ]
+        },
+        {
+            "id": "INV-2024-019",
+            "customer_id": "cust-09",
+            "status": "overdue",
+            "amount": 2300000,
+            "due_date": "2024-11-05",
+            "items": [
+                {
+                    "name": "Compute 4vCPU",
+                    "qty": 46,
+                    "unit": "days",
+                    "price": 50000
+                }
+            ]
+        },
+        {
+            "id": "INV-2024-020",
+            "customer_id": "cust-10",
+            "status": "draft",
+            "amount": 1000000,
+            "due_date": "2025-01-05",
+            "items": [
+                {
+                    "name": "Compute 2vCPU",
+                    "qty": 25,
+                    "unit": "days",
+                    "price": 40000
+                }
+            ]
+        },
+        {
+            "id": "INV-2024-021",
+            "customer_id": "cust-10",
+            "status": "draft",
+            "amount": 1000000,
+            "due_date": "2025-01-05",
+            "items": [
+                {
+                    "name": "Compute 2vCPU",
+                    "qty": 25,
+                    "unit": "days",
+                    "price": 40000
+                }
+            ]
+        }
+    ],
+    "customers": [
+        {
+            "id": "cust-01",
+            "name": "PT Maju Bersama",
+            "email": "finance@majubersama.co.id",
+            "plan": "business"
+        },
+        {
+            "id": "cust-02",
+            "name": "PT Sukses Jaya",
+            "email": "billing@suksesjaya.co.id",
+            "plan": "enterprise"
+        },
+        {
+            "id": "cust-03",
+            "name": "PT Teknologi Nusantara",
+            "email": "admin@teknologi.co.id",
+            "plan": "business"
+        },
+        {
+            "id": "cust-04",
+            "name": "PT Digital Kreatif",
+            "email": "finance@digitalkreatif.co.id",
+            "plan": "starter"
+        },
+        {
+            "id": "cust-05",
+            "name": "PT Cloud Mandiri",
+            "email": "cloud@mandiri.co.id",
+            "plan": "enterprise"
+        },
+        {
+            "id": "cust-06",
+            "name": "PT Data Solusi",
+            "email": "data@solusi.co.id",
+            "plan": "business"
+        },
+        {
+            "id": "cust-07",
+            "name": "PT Infrastruktur Hebat",
+            "email": "infra@hebat.co.id",
+            "plan": "enterprise"
+        },
+        {
+            "id": "cust-08",
+            "name": "PT Startup Maju",
+            "email": "hello@startupmaju.id",
+            "plan": "starter"
+        },
+        {
+            "id": "cust-09",
+            "name": "PT AI Indonesia",
+            "email": "ai@indo.co.id",
+            "plan": "business"
+        },
+        {
+            "id": "cust-10",
+            "name": "PT DevOps Nusantara",
+            "email": "devops@nusantara.co.id",
+            "plan": "enterprise"
+        }
+    ],
+    "$schema": "./node_modules/json-server/schema.json"
 }
